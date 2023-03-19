@@ -15,9 +15,16 @@ from time import sleep
 ########################################################################################################
 
 
+if __name__ == "__main__":
+    sense = SenseHat()
 
+    while(True):
 
+        humidity = sense.get_humidity()
+        temp = sense.get_temperature()
+        pressure = sense.get_pressure()
 
         message = "Temp:{:.0f} C, Pressure: {:.0f} mbar, Humidity: {:.0f} rH ".format(temp,pressure,humidity)
 
-
+        sense.show_message(message, text_colour=[255,0,0])
+        sleep(10)
