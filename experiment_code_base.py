@@ -12,7 +12,7 @@ if __name__ == "__main__":
     GROUP_NAME = "" ## put your group name inside the quotes## 
     
     #name of files to log data to
-    LOG_FILE_SENSE = f"/home/bob/{GROUP_NAME}_sense_hat_data.csv"
+    LOG_FILE_SENSE = f"/home/User_1/{GROUP_NAME}_sense_hat_data.csv"
 
     with open(LOG_FILE_SENSE,'w') as senseLog:
         senseLog.write("Time,Temperature,Pressure,RelativeHumidity\n")
