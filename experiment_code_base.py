@@ -3,6 +3,7 @@ import time
 from sense_hat import SenseHat
 import requests
 import json
+from time import sleep
 
 #color values to acheve 'black' or all LEDS off
 k = (0,0,0)
